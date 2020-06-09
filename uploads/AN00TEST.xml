@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TXLife xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://ACORD.org/Standards/Life/2">
+	<UserAuthRequest>
+		<UserLoginName>Applicint</UserLoginName>
+		<UserPswd>
+			<CryptType>NONE</CryptType>
+			<Pswd>Applicint</Pswd>
+		</UserPswd>
+		<VendorApp>
+			<VendorName VendorCode="2147483647">Applicint</VendorName>
+			<AppName>ExpressComplete</AppName>
+			<AppVer>1.59.1.1</AppVer>
+		</VendorApp>
+	</UserAuthRequest>
+	<TXLifeRequest PrimaryObjectID="Holding_1">
+		<TransRefGUID>TC2020420080813774</TransRefGUID>
+		<TransType tc="103">New Business Submission</TransType>
+		<TransExeDate>2020-04-20</TransExeDate>
+		<TransExeTime>08:08:13</TransExeTime>
+		<OLifE>
+			<Holding id="Holding_1">
+				<HoldingTypeCode tc="2">Policy</HoldingTypeCode>
+				<Policy id="Policy_1" CarrierPartyID="Party_Carrier">
+					<PolNumber>AN000043</PolNumber>
+					<ProductType tc="2">Term</ProductType>
+					<ProductCode>ANAT</ProductCode>
+					<CarrierCode>AMNT</CarrierCode>
+					<PlanName>Signature Term 30</PlanName>
+					<PaymentMode tc="4">Monthly</PaymentMode>
+					<PaymentAmt>44.28</PaymentAmt>
+					<PaymentMethod tc="7">Electronic Funds Transfer</PaymentMethod>
+					<Life>
+						<FaceAmt>250000.00</FaceAmt>
+						<Coverage id="Coverage_1">
+							<IndicatorCode tc="1">BASE</IndicatorCode>
+							<LifeParticipant id="Participant_1" PartyID="Applicant">
+								<LifeParticipantRoleCode tc="1">Primary Insured</LifeParticipantRoleCode>
+								<TobaccoPremiumBasis tc="1">Non Smoker</TobaccoPremiumBasis>
+							</LifeParticipant>
+						</Coverage>
+					</Life>
+					<ApplicationInfo>
+						<TrackingID>AN000043</TrackingID>
+						<ApplicationJurisdiction tc="12">FL</ApplicationJurisdiction>
+						<SignedDate>2020-04-20</SignedDate>
+					</ApplicationInfo>
+				</Policy>
+			</Holding>
+			<Party id="Applicant">
+				<PartyTypeCode tc="1">Person</PartyTypeCode>
+				<Person>
+					<FirstName>Test</FirstName>
+					<LastName>Insured</LastName>
+					<Gender tc="2">Female</Gender>
+					<BirthDate>1975-07-28</BirthDate>
+					<Age>44</Age>
+				</Person>
+				<Address>
+					<AddressTypeCode tc="1">Residence</AddressTypeCode>
+					<Line1>18571 42 Terrace</Line1>
+					<City>Miami</City>
+					<AddressState>FL</AddressState>
+					<AddressStateTC tc="12">FL</AddressStateTC>
+					<Zip>33185</Zip>
+					<PrefAddr tc="1">True</PrefAddr>
+				</Address>
+				<Phone>
+					<PhoneTypeCode tc="12">Mobile</PhoneTypeCode>
+					<AreaCode>786</AreaCode>
+					<DialNumber>2221764</DialNumber>
+					<PrefPhone tc="1">True</PrefPhone>
+				</Phone>
+				<EMailAddress>
+					<AddrLine>landsea4850@gmail.com</AddrLine>
+					<PrefEMailAddr tc="1">True</PrefEMailAddr>
+				</EMailAddress>
+			</Party>
+			<Party id="Agent">
+				<PartyTypeCode tc="1">Person</PartyTypeCode>
+				<GovtID>123456789</GovtID>
+				<GovtIDTC tc="1">Social Security Number US</GovtIDTC>
+				<Person>
+					<FirstName>Test</FirstName>
+					<LastName>Agent</LastName>
+				</Person>
+				<Address>
+					<AddressTypeCode tc="1">Residence</AddressTypeCode>
+					<Line1>217 E Beach Blvd</Line1>
+					<City>Hallandale</City>
+					<AddressStateTC tc="12"/>
+					<Zip>33009</Zip>
+					<PrefAddr tc="1">True</PrefAddr>
+				</Address>
+				<Phone>
+					<PhoneTypeCode tc="2">Business</PhoneTypeCode>
+					<AreaCode>954</AreaCode>
+					<DialNumber>4543145</DialNumber>
+					<PrefPhone tc="1">True</PrefPhone>
+				</Phone>
+				<Producer>
+					<CarrierAppointment>
+						<CompanyProducerID>GoJk2</CompanyProducerID>
+						<CarrierCode>GoJk2</CarrierCode>
+						<CarrierApptTypeCode tc="1">Agent</CarrierApptTypeCode>
+					</CarrierAppointment>
+				</Producer>
+				<EMailAddress>
+					<AddrLine>briemer@riemerinsurance.com</AddrLine>
+					<PrefEMailAddr tc="1">True</PrefEMailAddr>
+				</EMailAddress>
+				<OLifEExtension>
+					<PrimaryAgentNotYetContracted>No</PrimaryAgentNotYetContracted>
+					<PrimaryAgentContractNumberUnknown>No</PrimaryAgentContractNumberUnknown>
+					<SpecialInstructions>2 Policies to be issued -
+One on her ex husband
+One for herself
+Reason:  Income Replacement to the child in the event of death</SpecialInstructions>
+				</OLifEExtension>
+			</Party>
+			<Relation id="Relation_1" OriginatingObjectID="Holding_1" RelatedObjectID="Applicant">
+				<OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+				<RelatedObjectType tc="6">Party</RelatedObjectType>
+				<RelationRoleCode tc="32">Insured</RelationRoleCode>
+			</Relation>
+			<Relation id="Relation_2" OriginatingObjectID="Holding_1" RelatedObjectID="Applicant">
+				<OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+				<RelatedObjectType tc="6">Party</RelatedObjectType>
+				<RelationRoleCode tc="8">Owner</RelationRoleCode>
+			</Relation>
+			<Relation id="Relation_3" OriginatingObjectID="Holding_1" RelatedObjectID="Agent">
+				<OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+				<RelatedObjectType tc="6">Party</RelatedObjectType>
+				<RelationRoleCode tc="37">Primary Writing Agent</RelationRoleCode>
+			</Relation>
+			<Relation id="RELATION_FORMINSTANCE_FLI-PARADATA-01" OriginatingObjectID="Applicant" RelatedObjectID="FormInstance_1">
+				<OriginatingObjectType tc="6">Party</OriginatingObjectType>
+				<RelatedObjectType tc="101">FormInstance</RelatedObjectType>
+			</Relation>
+			<FormInstance id="FormInstance_1">
+				<FormName>FLI-PARADATA-01</FormName>
+				<FormResponse>
+					<QuestionNumber>insured_best_time_to_call</QuestionNumber>
+					<QuestionText>Best Time to Contact</QuestionText>
+					<ResponseText>8am - 12pm</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>insured_is_owner</QuestionNumber>
+					<QuestionText>Is the proposed insured the owner of this policy?</QuestionText>
+					<ResponseText>Yes</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>term_children_term_rider</QuestionNumber>
+					<QuestionText>Children&apos;s Term Rider</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>term_waiver_of_premium_rider</QuestionNumber>
+					<QuestionText>Disability Wavier of Premium Rider (Term)</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>existing_policies</QuestionNumber>
+					<QuestionText>Do you have existing life insurance or annuity coverage with this, or any other company?</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>existing_policies_within_6_months</QuestionNumber>
+					<QuestionText>In the past 6 months, has any proposed insured applied for-or is any proposed insured currently contemplating applying for-other life insurance with this or any other company?</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>existing_policies_insured</QuestionNumber>
+					<QuestionText>Insured</QuestionText>
+					<ResponseText>Diayanara Corroles</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>purpose_coverage_a</QuestionNumber>
+					<QuestionText>Income replacement</QuestionText>
+					<ResponseText>Yes</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>purpose_coverage_b</QuestionNumber>
+					<QuestionText>Debt repayment</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>purpose_coverage_c</QuestionNumber>
+					<QuestionText>Estate planning/conservation</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>purpose_coverage_d</QuestionNumber>
+					<QuestionText>Other</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>split_commissions</QuestionNumber>
+					<QuestionText>Are commissions to be split?</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>agent_special_instructions</QuestionNumber>
+					<QuestionText>Special Instructions</QuestionText>
+					<ResponseText>2 Policies to be issued -
+One on her ex husband
+One for herself
+Reason:  Income Replacement to the child in the event of death</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>agent_knowledge</QuestionNumber>
+					<QuestionText>Do you have knowledge or reason to believe that replacement of existing insurance may be involved?</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>agent_comply</QuestionNumber>
+					<QuestionText>Have you complied with state replacement regulations?</QuestionText>
+					<ResponseText>Yes</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>agent_agree</QuestionNumber>
+					<QuestionText>I agree</QuestionText>
+					<ResponseText>Yes</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>insured_driving</QuestionNumber>
+					<QuestionText>Have you ever had a drivers license?</QuestionText>
+					<ResponseText>Yes</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>number_of_replacements</QuestionNumber>
+					<ResponseText>0</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>insured_annual</QuestionNumber>
+					<QuestionText>Annual Premium Amount</QuestionText>
+					<ResponseText>512.50</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>express_complete_guid</QuestionNumber>
+					<ResponseText>8f874dde-de36-43ee-8cda-66f86991afa1</ResponseText>
+				</FormResponse>
+			</FormInstance>
+		</OLifE>
+	</TXLifeRequest>
+</TXLife>

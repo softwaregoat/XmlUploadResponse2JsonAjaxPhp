@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Populate XML</title>
+    <link rel="shortcut icon" href="logo.jpg">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script type="application/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Upload Xml file
+            <input type="file" name="file" id="file" class="form-control" accept=".xml"/>
+            <input type="submit" value="Upload XML" id="submit" class="btn-primary btn form-control"/>
+        </div>
+        <div class="card-body">
+            UserLoginName<input id="UserLoginName" class="form-control" disabled/>
+            PolNumber<input id="PolNumber" class="form-control" disabled/>
+            CarrierCode<input id="CarrierCode" class="form-control" disabled/>
+            FirstName<input id="FirstName" class="form-control" disabled/>
+            LastName<input id="LastName" class="form-control" disabled/>
+            BirthDate<input id="BirthDate" class="form-control" disabled/>
+            PhoneTypeCode<input id="PhoneTypeCode" class="form-control" disabled/>
+            AreaCode<input id="AreaCode" class="form-control" disabled/>
+            DialNumber<input id="DialNumber" class="form-control" disabled/>
+            Note<textarea id="note" class="form-control"></textarea>
+            <input type="submit" value="Submit Notes" id="submit-note" class="btn-primary btn form-control"/>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#submit').on('click', function() {
+            var file_data = $('#file').prop('files')[0];
+            var form_data = new FormData();
+            form_data.append('file', file_data);
+            $.ajax({
+                url: 'upload.php', // point to server-side PHP script
+                dataType: 'text',  // what to expect back from the PHP script, if anything
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,
+                type: 'post',
+                success: function(php_script_response){
+                    var data = $.parseJSON(php_script_response);
+                    console.log(php_script_response);
+                    $('#UserLoginName').val(data['UserLoginName']['0']);
+                    $('#PolNumber').val(data['PolNumber']['0']);
+                    $('#CarrierCode').val(data['CarrierCode']['0']);
+                    $('#FirstName').val(data['FirstName']['0']);
+                    $('#LastName').val(data['LastName']['0']);
+                    $('#BirthDate').val(data['BirthDate']['0']);
+                    $('#PhoneTypeCode').val(data['PhoneTypeCode']['0']);
+                    $('#AreaCode').val(data['AreaCode']['0']);
+                    $('#DialNumber').val(data['DialNumber']['0']);
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

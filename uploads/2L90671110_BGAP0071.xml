@@ -1,0 +1,353 @@
+<TXLife Version="2.10.00" xmlns="http://ACORD.org/Standards/Life/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<UserAuthRequest>
+		<UserLoginName>IPipeline</UserLoginName>
+		<UserPswd>
+			<CryptType>NONE</CryptType>
+			<Pswd/>
+		</UserPswd>
+		<VendorApp>
+			<VendorName VendorCode="220">IPipeLine</VendorName>
+			<AppName>E-App</AppName>
+			<AppVer>1.0</AppVer>
+		</VendorApp>
+	</UserAuthRequest>
+	<TXLifeRequest PrimaryObjectID="Application_Holding">
+		<TransRefGUID>39b638c2-18a9-4974-8abf-0e1590a56a0a</TransRefGUID>
+		<TransType tc="121">Requirement Order</TransType>
+		<TransExeDate>2019-05-23</TransExeDate>
+		<TransExeTime>16:40:54</TransExeTime>
+		<TransMode tc="2"/>
+		<NoResponseOK tc="0">False</NoResponseOK>
+		<OLifE>
+			<SourceInfo>
+				<CreationDate>2019-05-23</CreationDate>
+				<CreationTime>16:40:54</CreationTime>
+				<SourceInfoName>IPipeLine</SourceInfoName>
+			</SourceInfo>
+			<Holding id="Application_Holding">
+				<HoldingTypeCode tc="2">Policy</HoldingTypeCode>
+				<HoldingStatus tc="3">Proposed</HoldingStatus>
+				<HoldingForm tc="1">Individual</HoldingForm>
+				<Policy CarrierPartyID="Party_Carrier">
+					<PolNumber>2L90671110</PolNumber>
+					<LineOfBusiness tc="1">Life</LineOfBusiness>
+					<ProductType tc="2">TERM</ProductType>
+					<ProductCode>PROMT15</ProductCode>
+					<CarrierCode>PLIC</CarrierCode>
+					<PlanName>PL Promise Term (PLIC) 15</PlanName>
+					<PolicyStatus tc="12">Proposed</PolicyStatus>
+					<Jurisdiction tc="38">NC</Jurisdiction>
+					<PaymentMode tc="3">Quarterly</PaymentMode>
+					<PaymentAmt>81.65</PaymentAmt>
+					<PaymentMethod tc="26">PAW</PaymentMethod>
+					<Life>
+						<FaceAmt>100000</FaceAmt>
+						<TotalRiskAmt>100000</TotalRiskAmt>
+						<Coverage>
+							<IndicatorCode tc="1">Base</IndicatorCode>
+							<DurationDesign>15</DurationDesign>
+							<TIAInEffectInd tc="0">false</TIAInEffectInd>
+							<CurrentAmt>100000</CurrentAmt>
+							<LifeParticipant PartyID="Party_PrimaryInsured">
+								<LifeParticipantRoleCode tc="1">Primary Insured</LifeParticipantRoleCode>
+								<IssueGender tc="1">Male</IssueGender>
+								<SmokerStat tc="1">Never used tobacco in any form.</SmokerStat>
+								<UnderwritingClass tc="2">Preferred</UnderwritingClass>
+								<ClassName>Pref No Nicotine</ClassName>
+							</LifeParticipant>
+							<LifeParticipant PartyID="Party_Beneficiary_1">
+								<ParticipantName>Jackie Smith</ParticipantName>
+								<LifeParticipantRoleCode tc="7">Primary Beneficiary</LifeParticipantRoleCode>
+								<ParticipationPct>100</ParticipationPct>
+								<BeneficiaryRoleCode tc="1">Spouse</BeneficiaryRoleCode>
+								<BeneficiaryRoleCodeDesc tc="2">Wife</BeneficiaryRoleCodeDesc>
+							</LifeParticipant>
+						</Coverage>
+					</Life>
+					<ApplicationInfo>
+						<TrackingID>2L90671110</TrackingID>
+						<ApplicationJurisdiction tc="38">NC</ApplicationJurisdiction>
+						<SubmissionDate>2019-05-23</SubmissionDate>
+						<ApplicationCollectionDate>2019-05-23</ApplicationCollectionDate>
+						<PrefLanguage tc="9">English</PrefLanguage>
+						<ReplacementInd tc="0">No</ReplacementInd>
+					</ApplicationInfo>
+					<RequirementInfo AppliesToPartyID="Party_PrimaryInsured" FulfillerPartyID="Party_Fulfiller" RequesterPartyID="Party_Carrier" RequestorContactPartyID="Party_OrderContact" id="Req_1">
+						<ReqCode tc="535">Diagnose</ReqCode>
+						<ReqStatus tc="2">Submitted</ReqStatus>
+						<RequestedDate>2019-05-23</RequestedDate>
+						<RequirementAcctNum>LWG</RequirementAcctNum>
+					</RequirementInfo>
+					<OLifEExtension VendorCode="220">
+						<CompanionApp tc="0">No</CompanionApp>
+					</OLifEExtension>
+				</Policy>
+			</Holding>
+			<Party id="Party_PrimaryInsured">
+				<PartyTypeCode tc="1">Person</PartyTypeCode>
+				<FullName>John Smith</FullName>
+				<GovtID>123456789</GovtID>
+				<GovtIDTC tc="1"/>
+				<Person>
+					<FirstName>John</FirstName>
+					<LastName>Smith</LastName>
+					<Occupation>Courier</Occupation>
+					<Gender tc="1">Male</Gender>
+					<BirthDate>1956-02-22</BirthDate>
+					<EstSalary>35000</EstSalary>
+					<SmokerStat tc="1">Never used tobacco in any form.</SmokerStat>
+					<BirthCountry tc="1">United States</BirthCountry>
+					<BirthJurisdictionTC tc="38">NC</BirthJurisdictionTC>
+				</Person>
+				<Address>
+					<AddressTypeCode tc="1">Residence</AddressTypeCode>
+					<Line1>123 Main street</Line1>
+					<City>Claremont</City>
+					<AddressState>NC</AddressState>
+					<AddressStateTC tc="38">NC</AddressStateTC>
+					<Zip>28610</Zip>
+					<AddressCountryTC tc="1">USA</AddressCountryTC>
+				</Address>
+				<Address>
+					<AddressTypeCode tc="17">Mailing</AddressTypeCode>
+					<Line1>PO Box 575</Line1>
+					<City>Claremont</City>
+					<AddressState>NC</AddressState>
+					<AddressStateTC tc="38">NC</AddressStateTC>
+					<Zip>28610</Zip>
+					<AddressCountryTC tc="1">USA</AddressCountryTC>
+				</Address>
+				<Phone>
+					<PhoneTypeCode tc="1">Home</PhoneTypeCode>
+					<AreaCode>828</AreaCode>
+					<DialNumber>2360682</DialNumber>
+					<Ext/>
+				</Phone>
+				<Phone>
+					<PhoneTypeCode tc="12">Cell Phone</PhoneTypeCode>
+					<AreaCode>828</AreaCode>
+					<DialNumber>230076</DialNumber>
+				</Phone>
+				<EMailAddress>
+					<AddrLine>JohnSmith@charter.net</AddrLine>
+				</EMailAddress>
+				<Risk>
+					<ExistingInsuranceInd tc="0">False</ExistingInsuranceInd>
+					<ReplacementInd tc="0">False</ReplacementInd>
+					<LabTesting>
+						<OLifEExtension VendorCode="220">
+							<PreviousLab tc="0">No</PreviousLab>
+						</OLifEExtension>
+					</LabTesting>
+				</Risk>
+				<OLifEExtension VendorCode="220">
+					<PreferredMethodOfCommunication>Telephone</PreferredMethodOfCommunication>
+				</OLifEExtension>
+			</Party>
+			<Party id="Party_Beneficiary_1">
+				<PartyTypeCode tc="1">Person</PartyTypeCode>
+				<GovtID/>
+				<GovtIDTC tc="1"/>
+				<Person>
+					<FirstName>Jackie</FirstName>
+					<MiddleName/>
+					<LastName>Smith</LastName>
+					<BirthDate>1961-09-07</BirthDate>
+				</Person>
+				<Address>
+					<AddressTypeCode tc="1">Residence</AddressTypeCode>
+					<Line1>123 main Street</Line1>
+					<City>Claremont</City>
+					<AddressState>NC</AddressState>
+					<AddressStateTC tc="38">NC</AddressStateTC>
+					<Zip>28610</Zip>
+					<AddressCountryTC tc="1">USA</AddressCountryTC>
+				</Address>
+			</Party>
+			<Party id="Party_WA_1">
+				<PartyTypeCode tc="1">Person</PartyTypeCode>
+				<FullName>Carl boyd</FullName>
+				<GovtID>123456789</GovtID>
+				<GovtIDTC tc="1">SSN</GovtIDTC>
+				<Person>
+					<LastName>Carl boyd</LastName>
+				</Person>
+				<Phone>
+					<PhoneTypeCode tc="2">Work</PhoneTypeCode>
+					<AreaCode>800</AreaCode>
+					<DialNumber>1234567</DialNumber>
+				</Phone>
+				<Producer>
+					<CarrierAppointment>
+						<CompanyProducerID/>
+						<CarrierCode>PLIC</CarrierCode>
+					</CarrierAppointment>
+				</Producer>
+				<EMailAddress>
+					<EMailType tc="1">Business</EMailType>
+					<AddrLine>carl@reliantdirect.net</AddrLine>
+				</EMailAddress>
+			</Party>
+			<Party id="Party_WAgency">
+				<PartyTypeCode tc="2">Organization</PartyTypeCode>
+				<FullName>EFinancial (iPipeline)</FullName>
+				<Organization>
+					<OrgCodeFunction tc="1">Sales</OrgCodeFunction>
+				</Organization>
+				<Producer>
+					<CarrierAppointment>
+						<CompanyProducerID>1809</CompanyProducerID>
+						<CarrierCode>PLIC</CarrierCode>
+						<CarrierApptTypeCode tc="4">Agency</CarrierApptTypeCode>
+					</CarrierAppointment>
+				</Producer>
+			</Party>
+			<Party id="Party_Carrier">
+				<PartyTypeCode tc="2">Organization</PartyTypeCode>
+				<FullName>Pacific Life Insurance Company - Lynchburg</FullName>
+				<Organization>
+					<OrgForm tc="23">Corporation</OrgForm>
+					<ACORDVendorCode>023</ACORDVendorCode>
+				</Organization>
+				<Carrier>
+					<CarrierCode>PLIC</CarrierCode>
+				</Carrier>
+			</Party>
+			<Party id="Party_Fulfiller">
+				<PartyTypeCode tc="2">Organization</PartyTypeCode>
+				<FullName>ExamOne Case Management</FullName>
+				<Organization>
+					<OrgForm tc="23">Corporation</OrgForm>
+					<OrgCode>CASE1</OrgCode>
+					<ACORDVendorCode>038</ACORDVendorCode>
+				</Organization>
+			</Party>
+			<Party id="Party_OrderContact">
+				<PartyTypeCode tc="2">Organization</PartyTypeCode>
+				<FullName/>
+				<Organization>
+					<OrgCodeFunction tc="1">Sales</OrgCodeFunction>
+				</Organization>
+				<EMailAddress>
+					<EMailType tc="1">Business</EMailType>
+					<AddrLine/>
+				</EMailAddress>
+			</Party>
+			<Relation OriginatingObjectID="Application_Holding" RelatedObjectID="Party_PrimaryInsured" id="Relation_PrimaryInsured">
+				<OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+				<RelatedObjectType tc="6">Party</RelatedObjectType>
+				<RelationRoleCode tc="32">Insured</RelationRoleCode>
+			</Relation>
+			<Relation OriginatingObjectID="Application_Holding" RelatedObjectID="Party_PrimaryInsured" id="Relation_PrimaryOwner">
+				<OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+				<RelatedObjectType tc="6">Party</RelatedObjectType>
+				<RelationRoleCode tc="8">Owner</RelationRoleCode>
+				<InterestPercent>100</InterestPercent>
+			</Relation>
+			<Relation OriginatingObjectID="Application_Holding" RelatedObjectID="Party_WA_1" id="Relation_WritingAgent_1">
+				<OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+				<RelatedObjectType tc="6">Party</RelatedObjectType>
+				<RelationRoleCode tc="37">Primary Agent</RelationRoleCode>
+				<InterestPercent>100</InterestPercent>
+			</Relation>
+			<Relation OriginatingObjectID="Application_Holding" RelatedObjectID="Party_WAgency" id="Relation_WritingAgency">
+				<OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+				<RelatedObjectType tc="6">Party</RelatedObjectType>
+				<RelationRoleCode tc="182">Agency</RelationRoleCode>
+			</Relation>
+			<Relation OriginatingObjectID="Application_Holding" RelatedObjectID="Party_Carrier" id="Relation_Carrier">
+				<OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+				<RelatedObjectType tc="6">Party</RelatedObjectType>
+				<RelationRoleCode tc="87">Carrier</RelationRoleCode>
+			</Relation>
+			<FormInstance id="FormInstance_App">
+				<FormName>Application For Life Insurance</FormName>
+				<FormResponse>
+					<QuestionNumber>CarrierCode</QuestionNumber>
+					<QuestionText>Carrier Code</QuestionText>
+					<ResponseText>PLIC</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>TermOfInsurance</QuestionNumber>
+					<QuestionText>Term Of Insurance</QuestionText>
+					<ResponseText>15</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>SolicitationState</QuestionNumber>
+					<QuestionText>State of Solicitation</QuestionText>
+					<ResponseText>NC</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>PersonalInsInd</QuestionNumber>
+					<QuestionText>Personal Insurance Indicator</QuestionText>
+					<ResponseText>Yes</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>BusinessInsPurpose</QuestionNumber>
+					<QuestionText>Business Insurance Purpose</QuestionText>
+					<ResponseText/>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>PersonalInsPurpose</QuestionNumber>
+					<QuestionText>Personal Insurance Purpose</QuestionText>
+					<ResponseText>Other</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>PersonalInsPurposeOther</QuestionNumber>
+					<QuestionText>Other Insurance Purpose</QuestionText>
+					<ResponseText>Family Protection</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>Agent_Attestation</QuestionNumber>
+					<QuestionText>Trigger to generate the Agent Attestation Form</QuestionText>
+					<ResponseText>TRUE</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>PersonalGrossAnnInc</QuestionNumber>
+					<QuestionText>Personal Finances: Gross Annual Income</QuestionText>
+					<ResponseText>35000</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>PersonalTotAssets</QuestionNumber>
+					<QuestionText>Personal Finances: Total Assets</QuestionText>
+					<ResponseText>100000</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>PersonalTotLiab</QuestionNumber>
+					<QuestionText>Personal Finances: Total Liabilities</QuestionText>
+					<ResponseText>0</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>TIAInEffectInd</QuestionNumber>
+					<QuestionText>If you accepted money for this application, a Temporary Insurance Application and Agreement (TIAA) is required? Was a TIAA given?</QuestionText>
+					<ResponseText>No</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>EFTFormInd</QuestionNumber>
+					<QuestionText>EFT Form Indicator?</QuestionText>
+					<ResponseText>Yes</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>DELIVERY_TYPE</QuestionNumber>
+					<QuestionText>Type of Delivery</QuestionText>
+					<ResponseText>edelivery</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>Proposed_Insured_Email</QuestionNumber>
+					<QuestionText>Proposed Insured Email</QuestionText>
+					<ResponseText>JohnSmith@charter.net</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>PI_Birth_State</QuestionNumber>
+					<QuestionText>Birth State</QuestionText>
+					<ResponseText>NC</ResponseText>
+				</FormResponse>
+				<FormResponse>
+					<QuestionNumber>PI_US_Citizen</QuestionNumber>
+					<QuestionText>Is the Proposed Insured a United States citizen?</QuestionText>
+					<ResponseText>Yes</ResponseText>
+				</FormResponse>
+			</FormInstance>
+		</OLifE>
+	</TXLifeRequest>
+</TXLife>
